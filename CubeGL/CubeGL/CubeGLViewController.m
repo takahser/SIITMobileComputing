@@ -198,6 +198,49 @@ enum {
     [self drawUnitSquareRed:0 Green:255 Blue:0 Alpha:128];
     glPopMatrix();
     
+    glPushMatrix(); // Save state before cube
+    
+    // Rotate Cube
+    glRotatef(transY*5, 1, 1, 0);
+    
+    // Cube face 1
+    glPushMatrix();
+    glRotatef(0, 0, 1, 0);
+    glTranslatef(0, 0, -0.5);
+    [self drawUnitSquareRed:255 Green:0 Blue:0 Alpha:255]; glPopMatrix();
+    
+    // Cube face 2
+    glPushMatrix();
+    glRotatef(90, 0, 1, 0);
+    glTranslatef(0, 0, -0.5);
+    [self drawUnitSquareRed:0 Green:255 Blue:0 Alpha:255]; glPopMatrix();
+    
+    // Cube face 3
+    glPushMatrix();
+    glRotatef(180, 0, 1, 0); glTranslatef(0, 0, -0.5);
+    [self drawUnitSquareRed:0 Green:0 Blue:255 Alpha:255]; glPopMatrix();
+    
+    // Cube face 4
+    glPushMatrix();
+    glRotatef(270, 0, 1, 0);
+    glTranslatef(0, 0, -0.5);
+    [self drawUnitSquareRed:0 Green:255 Blue:255 Alpha:255]; glPopMatrix();
+    
+    // Cube face 5
+    glPushMatrix();
+    glRotatef(0, 90, 1, 0);
+    glTranslatef(0, 0, -0.5);
+    [self drawUnitSquareRed:255 Green:0 Blue:255 Alpha:255]; glPopMatrix();
+    
+    // Cube face 6
+    glPushMatrix();
+    glRotatef(0, -90, 1, 0);
+    glTranslatef(0, 0, -0.5);
+    [self drawUnitSquareRed:255 Green:255 Blue:0 Alpha:255]; glPopMatrix();
+    
+    glPopMatrix(); // Restore state after cube
+    
+    
     transY += 0.075f;
     
     // turn off “color blending” feature
@@ -213,11 +256,19 @@ enum {
     static const GLfloat squareVertices[] = { -0.5f, -0.5f,
         0.5f, -0.5f, -0.5f, 0.5f, 0.5f, 0.5f,
     };
+    
+    /*
     const GLubyte squareColors[] = { red, green, blue, alpha,
         red, green, blue, alpha,
         red, green, blue, alpha,
         red, green, blue, alpha };
-    glVertexPointer(2, GL_FLOAT, 0, squareVertices); glEnableClientState(GL_VERTEX_ARRAY); glColorPointer(4, GL_UNSIGNED_BYTE, 0, squareColors); glEnableClientState(GL_COLOR_ARRAY);
+    */
+    
+    glVertexPointer(2, GL_FLOAT, 0, squareVertices); glEnableClientState(GL_VERTEX_ARRAY);
+    //glColorPointer(4, GL_UNSIGNED_BYTE, 0, squareColors);
+    //glEnableClientState(GL_COLOR_ARRAY);
+    glColor4ub(red, green, blue, alpha);
+    glDisableClientState(GL_COLOR_ARRAY);
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 }
 
