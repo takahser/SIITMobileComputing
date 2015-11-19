@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		702746B01BB3B2B900EC7FB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 702746AF1BB3B2B900EC7FB8 /* main.m */; };
+		702746B31BB3B2B900EC7FB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 702746B21BB3B2B900EC7FB8 /* AppDelegate.m */; };
+		702746B61BB3B2B900EC7FB8 /* ScoreInput.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 702746B41BB3B2B900EC7FB8 /* ScoreInput.xcdatamodeld */; };
+		702746B91BB3B2B900EC7FB8 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702746B81BB3B2B900EC7FB8 /* MasterViewController.m */; };
+		702746BC1BB3B2B900EC7FB8 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702746BB1BB3B2B900EC7FB8 /* DetailViewController.m */; };
+		702746C11BB3B2B900EC7FB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 702746C01BB3B2B900EC7FB8 /* Images.xcassets */; };
+		702746C41BB3B2B900EC7FB8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 702746C21BB3B2B900EC7FB8 /* LaunchScreen.xib */; };
+		702746D01BB3B2B900EC7FB8 /* ScoreInputTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 702746CF1BB3B2B900EC7FB8 /* ScoreInputTests.m */; };
+		702746DD1BB3B5FF00EC7FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702746DC1BB3B5FF00EC7FB8 /* Main.storyboard */; };
+		702746E01BB3B78A00EC7FB8 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 702746DF1BB3B78A00EC7FB8 /* Student.m */; };
+		702746E31BB3B78A00EC7FB8 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 702746E21BB3B78A00EC7FB8 /* Score.m */; };
+		702746E61BB3B78A00EC7FB8 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 702746E51BB3B78A00EC7FB8 /* Course.m */; };
+		702746EA1BB3BB8F00EC7FB8 /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702746E81BB3BB8F00EC7FB8 /* ScoreViewController.m */; };
+		702746EB1BB3BB8F00EC7FB8 /* ScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 702746E91BB3BB8F00EC7FB8 /* ScoreViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		702746CA1BB3B2B900EC7FB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 702746A21BB3B2B900EC7FB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 702746A91BB3B2B900EC7FB8;
+			remoteInfo = ScoreInput;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		702746AA1BB3B2B900EC7FB8 /* ScoreInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		702746AE1BB3B2B900EC7FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		702746AF1BB3B2B900EC7FB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		702746B11BB3B2B900EC7FB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		702746B21BB3B2B900EC7FB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		702746B51BB3B2B900EC7FB8 /* ScoreInput.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScoreInput.xcdatamodel; sourceTree = "<group>"; };
+		702746B71BB3B2B900EC7FB8 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		702746B81BB3B2B900EC7FB8 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		702746BA1BB3B2B900EC7FB8 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		702746BB1BB3B2B900EC7FB8 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		702746C01BB3B2B900EC7FB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		702746C31BB3B2B900EC7FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		702746C91BB3B2B900EC7FB8 /* ScoreInputTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreInputTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		702746CE1BB3B2B900EC7FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		702746CF1BB3B2B900EC7FB8 /* ScoreInputTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreInputTests.m; sourceTree = "<group>"; };
+		702746DC1BB3B5FF00EC7FB8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		702746DE1BB3B78A00EC7FB8 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		702746DF1BB3B78A00EC7FB8 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		702746E11BB3B78A00EC7FB8 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		702746E21BB3B78A00EC7FB8 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		702746E41BB3B78A00EC7FB8 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		702746E51BB3B78A00EC7FB8 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		702746E71BB3BB8F00EC7FB8 /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
+		702746E81BB3BB8F00EC7FB8 /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
+		702746E91BB3BB8F00EC7FB8 /* ScoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScoreViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		702746A71BB3B2B900EC7FB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		702746C61BB3B2B900EC7FB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		702746A11BB3B2B900EC7FB8 = {
+			isa = PBXGroup;
+			children = (
+				702746E71BB3BB8F00EC7FB8 /* ScoreViewController.h */,
+				702746E81BB3BB8F00EC7FB8 /* ScoreViewController.m */,
+				702746E91BB3BB8F00EC7FB8 /* ScoreViewController.xib */,
+				702746E41BB3B78A00EC7FB8 /* Course.h */,
+				702746E51BB3B78A00EC7FB8 /* Course.m */,
+				702746E11BB3B78A00EC7FB8 /* Score.h */,
+				702746E21BB3B78A00EC7FB8 /* Score.m */,
+				702746DE1BB3B78A00EC7FB8 /* Student.h */,
+				702746DF1BB3B78A00EC7FB8 /* Student.m */,
+				702746AC1BB3B2B900EC7FB8 /* ScoreInput */,
+				702746CC1BB3B2B900EC7FB8 /* ScoreInputTests */,
+				702746AB1BB3B2B900EC7FB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		702746AB1BB3B2B900EC7FB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				702746AA1BB3B2B900EC7FB8 /* ScoreInput.app */,
+				702746C91BB3B2B900EC7FB8 /* ScoreInputTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		702746AC1BB3B2B900EC7FB8 /* ScoreInput */ = {
+			isa = PBXGroup;
+			children = (
+				702746B11BB3B2B900EC7FB8 /* AppDelegate.h */,
+				702746B21BB3B2B900EC7FB8 /* AppDelegate.m */,
+				702746B71BB3B2B900EC7FB8 /* MasterViewController.h */,
+				702746B81BB3B2B900EC7FB8 /* MasterViewController.m */,
+				702746BA1BB3B2B900EC7FB8 /* DetailViewController.h */,
+				702746BB1BB3B2B900EC7FB8 /* DetailViewController.m */,
+				702746DC1BB3B5FF00EC7FB8 /* Main.storyboard */,
+				702746C01BB3B2B900EC7FB8 /* Images.xcassets */,
+				702746C21BB3B2B900EC7FB8 /* LaunchScreen.xib */,
+				702746B41BB3B2B900EC7FB8 /* ScoreInput.xcdatamodeld */,
+				702746AD1BB3B2B900EC7FB8 /* Supporting Files */,
+			);
+			path = ScoreInput;
+			sourceTree = "<group>";
+		};
+		702746AD1BB3B2B900EC7FB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				702746AE1BB3B2B900EC7FB8 /* Info.plist */,
+				702746AF1BB3B2B900EC7FB8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		702746CC1BB3B2B900EC7FB8 /* ScoreInputTests */ = {
+			isa = PBXGroup;
+			children = (
+				702746CF1BB3B2B900EC7FB8 /* ScoreInputTests.m */,
+				702746CD1BB3B2B900EC7FB8 /* Supporting Files */,
+			);
+			path = ScoreInputTests;
+			sourceTree = "<group>";
+		};
+		702746CD1BB3B2B900EC7FB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				702746CE1BB3B2B900EC7FB8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		702746A91BB3B2B900EC7FB8 /* ScoreInput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 702746D31BB3B2B900EC7FB8 /* Build configuration list for PBXNativeTarget "ScoreInput" */;
+			buildPhases = (
+				702746A61BB3B2B900EC7FB8 /* Sources */,
+				702746A71BB3B2B900EC7FB8 /* Frameworks */,
+				702746A81BB3B2B900EC7FB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScoreInput;
+			productName = ScoreInput;
+			productReference = 702746AA1BB3B2B900EC7FB8 /* ScoreInput.app */;
+			productType = "com.apple.product-type.application";
+		};
+		702746C81BB3B2B900EC7FB8 /* ScoreInputTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 702746D61BB3B2B900EC7FB8 /* Build configuration list for PBXNativeTarget "ScoreInputTests" */;
+			buildPhases = (
+				702746C51BB3B2B900EC7FB8 /* Sources */,
+				702746C61BB3B2B900EC7FB8 /* Frameworks */,
+				702746C71BB3B2B900EC7FB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				702746CB1BB3B2B900EC7FB8 /* PBXTargetDependency */,
+			);
+			name = ScoreInputTests;
+			productName = ScoreInputTests;
+			productReference = 702746C91BB3B2B900EC7FB8 /* ScoreInputTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		702746A21BB3B2B900EC7FB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "S Takahashi";
+				TargetAttributes = {
+					702746A91BB3B2B900EC7FB8 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					702746C81BB3B2B900EC7FB8 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 702746A91BB3B2B900EC7FB8;
+					};
+				};
+			};
+			buildConfigurationList = 702746A51BB3B2B900EC7FB8 /* Build configuration list for PBXProject "ScoreInput" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 702746A11BB3B2B900EC7FB8;
+			productRefGroup = 702746AB1BB3B2B900EC7FB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				702746A91BB3B2B900EC7FB8 /* ScoreInput */,
+				702746C81BB3B2B900EC7FB8 /* ScoreInputTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		702746A81BB3B2B900EC7FB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				702746C41BB3B2B900EC7FB8 /* LaunchScreen.xib in Resources */,
+				702746C11BB3B2B900EC7FB8 /* Images.xcassets in Resources */,
+				702746DD1BB3B5FF00EC7FB8 /* Main.storyboard in Resources */,
+				702746EB1BB3BB8F00EC7FB8 /* ScoreViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		702746C71BB3B2B900EC7FB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		702746A61BB3B2B900EC7FB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				702746BC1BB3B2B900EC7FB8 /* DetailViewController.m in Sources */,
+				702746B91BB3B2B900EC7FB8 /* MasterViewController.m in Sources */,
+				702746B31BB3B2B900EC7FB8 /* AppDelegate.m in Sources */,
+				702746EA1BB3BB8F00EC7FB8 /* ScoreViewController.m in Sources */,
+				702746B61BB3B2B900EC7FB8 /* ScoreInput.xcdatamodeld in Sources */,
+				702746E61BB3B78A00EC7FB8 /* Course.m in Sources */,
+				702746E31BB3B78A00EC7FB8 /* Score.m in Sources */,
+				702746B01BB3B2B900EC7FB8 /* main.m in Sources */,
+				702746E01BB3B78A00EC7FB8 /* Student.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		702746C51BB3B2B900EC7FB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				702746D01BB3B2B900EC7FB8 /* ScoreInputTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		702746CB1BB3B2B900EC7FB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 702746A91BB3B2B900EC7FB8 /* ScoreInput */;
+			targetProxy = 702746CA1BB3B2B900EC7FB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		702746C21BB3B2B900EC7FB8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				702746C31BB3B2B900EC7FB8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		702746D11BB3B2B900EC7FB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		702746D21BB3B2B900EC7FB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		702746D41BB3B2B900EC7FB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScoreInput/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		702746D51BB3B2B900EC7FB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScoreInput/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		702746D71BB3B2B900EC7FB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ScoreInputTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreInput.app/ScoreInput";
+			};
+			name = Debug;
+		};
+		702746D81BB3B2B900EC7FB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ScoreInputTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreInput.app/ScoreInput";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		702746A51BB3B2B900EC7FB8 /* Build configuration list for PBXProject "ScoreInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				702746D11BB3B2B900EC7FB8 /* Debug */,
+				702746D21BB3B2B900EC7FB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		702746D31BB3B2B900EC7FB8 /* Build configuration list for PBXNativeTarget "ScoreInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				702746D41BB3B2B900EC7FB8 /* Debug */,
+				702746D51BB3B2B900EC7FB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		702746D61BB3B2B900EC7FB8 /* Build configuration list for PBXNativeTarget "ScoreInputTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				702746D71BB3B2B900EC7FB8 /* Debug */,
+				702746D81BB3B2B900EC7FB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		702746B41BB3B2B900EC7FB8 /* ScoreInput.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				702746B51BB3B2B900EC7FB8 /* ScoreInput.xcdatamodel */,
+			);
+			currentVersion = 702746B51BB3B2B900EC7FB8 /* ScoreInput.xcdatamodel */;
+			path = ScoreInput.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 702746A21BB3B2B900EC7FB8 /* Project object */;
+}

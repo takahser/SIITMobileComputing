@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8EA5E4117E9D975009C1B48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EA5E4017E9D975009C1B48 /* UIKit.framework */; };
+		D8EA5E4317E9D975009C1B48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EA5E4217E9D975009C1B48 /* Foundation.framework */; };
+		D8EA5E4517E9D975009C1B48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EA5E4417E9D975009C1B48 /* CoreGraphics.framework */; };
+		D8EA5E4717E9D975009C1B48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EA5E4617E9D975009C1B48 /* QuartzCore.framework */; };
+		D8EA5E4917E9D975009C1B48 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EA5E4817E9D975009C1B48 /* OpenGLES.framework */; };
+		D8EA5E4F17E9D975009C1B48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8EA5E4D17E9D975009C1B48 /* InfoPlist.strings */; };
+		D8EA5E5217E9D975009C1B48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EA5E5117E9D975009C1B48 /* main.m */; };
+		D8EA5E5517E9D975009C1B48 /* CubeGLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EA5E5417E9D975009C1B48 /* CubeGLAppDelegate.m */; };
+		D8EA5E5817E9D975009C1B48 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8EA5E5617E9D975009C1B48 /* MainWindow.xib */; };
+		D8EA5E5A17E9D975009C1B48 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = D8EA5E5917E9D975009C1B48 /* Shader.fsh */; };
+		D8EA5E5C17E9D975009C1B48 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = D8EA5E5B17E9D975009C1B48 /* Shader.vsh */; };
+		D8EA5E5F17E9D975009C1B48 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EA5E5E17E9D975009C1B48 /* EAGLView.m */; };
+		D8EA5E6217E9D975009C1B48 /* CubeGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EA5E6117E9D975009C1B48 /* CubeGLViewController.m */; };
+		D8EA5E6517E9D975009C1B48 /* CubeGLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8EA5E6317E9D975009C1B48 /* CubeGLViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D8EA5E3C17E9D975009C1B48 /* CubeGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EA5E4017E9D975009C1B48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8EA5E4217E9D975009C1B48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D8EA5E4417E9D975009C1B48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D8EA5E4617E9D975009C1B48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D8EA5E4817E9D975009C1B48 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D8EA5E4C17E9D975009C1B48 /* CubeGL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CubeGL-Info.plist"; sourceTree = "<group>"; };
+		D8EA5E4E17E9D975009C1B48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8EA5E5017E9D975009C1B48 /* CubeGL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CubeGL-Prefix.pch"; sourceTree = "<group>"; };
+		D8EA5E5117E9D975009C1B48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8EA5E5317E9D975009C1B48 /* CubeGLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeGLAppDelegate.h; sourceTree = "<group>"; };
+		D8EA5E5417E9D975009C1B48 /* CubeGLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeGLAppDelegate.m; sourceTree = "<group>"; };
+		D8EA5E5717E9D975009C1B48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		D8EA5E5917E9D975009C1B48 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		D8EA5E5B17E9D975009C1B48 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		D8EA5E5D17E9D975009C1B48 /* EAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		D8EA5E5E17E9D975009C1B48 /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		D8EA5E6017E9D975009C1B48 /* CubeGLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeGLViewController.h; sourceTree = "<group>"; };
+		D8EA5E6117E9D975009C1B48 /* CubeGLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeGLViewController.m; sourceTree = "<group>"; };
+		D8EA5E6417E9D975009C1B48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CubeGLViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8EA5E3917E9D975009C1B48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EA5E4117E9D975009C1B48 /* UIKit.framework in Frameworks */,
+				D8EA5E4317E9D975009C1B48 /* Foundation.framework in Frameworks */,
+				D8EA5E4517E9D975009C1B48 /* CoreGraphics.framework in Frameworks */,
+				D8EA5E4717E9D975009C1B48 /* QuartzCore.framework in Frameworks */,
+				D8EA5E4917E9D975009C1B48 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8EA5E3117E9D974009C1B48 = {
+			isa = PBXGroup;
+			children = (
+				D8EA5E4A17E9D975009C1B48 /* CubeGL */,
+				D8EA5E3F17E9D975009C1B48 /* Frameworks */,
+				D8EA5E3D17E9D975009C1B48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8EA5E3D17E9D975009C1B48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8EA5E3C17E9D975009C1B48 /* CubeGL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8EA5E3F17E9D975009C1B48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8EA5E4017E9D975009C1B48 /* UIKit.framework */,
+				D8EA5E4217E9D975009C1B48 /* Foundation.framework */,
+				D8EA5E4417E9D975009C1B48 /* CoreGraphics.framework */,
+				D8EA5E4617E9D975009C1B48 /* QuartzCore.framework */,
+				D8EA5E4817E9D975009C1B48 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8EA5E4A17E9D975009C1B48 /* CubeGL */ = {
+			isa = PBXGroup;
+			children = (
+				D8EA5E5317E9D975009C1B48 /* CubeGLAppDelegate.h */,
+				D8EA5E5417E9D975009C1B48 /* CubeGLAppDelegate.m */,
+				D8EA5E5617E9D975009C1B48 /* MainWindow.xib */,
+				D8EA5E5917E9D975009C1B48 /* Shader.fsh */,
+				D8EA5E5B17E9D975009C1B48 /* Shader.vsh */,
+				D8EA5E5D17E9D975009C1B48 /* EAGLView.h */,
+				D8EA5E5E17E9D975009C1B48 /* EAGLView.m */,
+				D8EA5E6017E9D975009C1B48 /* CubeGLViewController.h */,
+				D8EA5E6117E9D975009C1B48 /* CubeGLViewController.m */,
+				D8EA5E6317E9D975009C1B48 /* CubeGLViewController.xib */,
+				D8EA5E4B17E9D975009C1B48 /* Supporting Files */,
+			);
+			path = CubeGL;
+			sourceTree = "<group>";
+		};
+		D8EA5E4B17E9D975009C1B48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8EA5E4C17E9D975009C1B48 /* CubeGL-Info.plist */,
+				D8EA5E4D17E9D975009C1B48 /* InfoPlist.strings */,
+				D8EA5E5017E9D975009C1B48 /* CubeGL-Prefix.pch */,
+				D8EA5E5117E9D975009C1B48 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8EA5E3B17E9D975009C1B48 /* CubeGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8EA5E6817E9D975009C1B48 /* Build configuration list for PBXNativeTarget "CubeGL" */;
+			buildPhases = (
+				D8EA5E3817E9D975009C1B48 /* Sources */,
+				D8EA5E3917E9D975009C1B48 /* Frameworks */,
+				D8EA5E3A17E9D975009C1B48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CubeGL;
+			productName = CubeGL;
+			productReference = D8EA5E3C17E9D975009C1B48 /* CubeGL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8EA5E3317E9D974009C1B48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = D8EA5E3617E9D974009C1B48 /* Build configuration list for PBXProject "CubeGL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8EA5E3117E9D974009C1B48;
+			productRefGroup = D8EA5E3D17E9D975009C1B48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8EA5E3B17E9D975009C1B48 /* CubeGL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8EA5E3A17E9D975009C1B48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EA5E4F17E9D975009C1B48 /* InfoPlist.strings in Resources */,
+				D8EA5E5817E9D975009C1B48 /* MainWindow.xib in Resources */,
+				D8EA5E5A17E9D975009C1B48 /* Shader.fsh in Resources */,
+				D8EA5E5C17E9D975009C1B48 /* Shader.vsh in Resources */,
+				D8EA5E6517E9D975009C1B48 /* CubeGLViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8EA5E3817E9D975009C1B48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EA5E5217E9D975009C1B48 /* main.m in Sources */,
+				D8EA5E5517E9D975009C1B48 /* CubeGLAppDelegate.m in Sources */,
+				D8EA5E5F17E9D975009C1B48 /* EAGLView.m in Sources */,
+				D8EA5E6217E9D975009C1B48 /* CubeGLViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8EA5E4D17E9D975009C1B48 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8EA5E4E17E9D975009C1B48 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D8EA5E5617E9D975009C1B48 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8EA5E5717E9D975009C1B48 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		D8EA5E6317E9D975009C1B48 /* CubeGLViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8EA5E6417E9D975009C1B48 /* en */,
+			);
+			name = CubeGLViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8EA5E6617E9D975009C1B48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D8EA5E6717E9D975009C1B48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		D8EA5E6917E9D975009C1B48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CubeGL/CubeGL-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "CubeGL/CubeGL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D8EA5E6A17E9D975009C1B48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CubeGL/CubeGL-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "CubeGL/CubeGL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8EA5E3617E9D974009C1B48 /* Build configuration list for PBXProject "CubeGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8EA5E6617E9D975009C1B48 /* Debug */,
+				D8EA5E6717E9D975009C1B48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8EA5E6817E9D975009C1B48 /* Build configuration list for PBXNativeTarget "CubeGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8EA5E6917E9D975009C1B48 /* Debug */,
+				D8EA5E6A17E9D975009C1B48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8EA5E3317E9D974009C1B48 /* Project object */;
+}
