@@ -170,67 +170,42 @@ enum {
 - (void)drawFrame
 {
     [(EAGLView *)self.view setFramebuffer];
-    
-    // Replace the implementation of this method to do your own custom drawing.
-    static const GLfloat squareVertices[] = {
-        -0.5f, -0.5f,
-        0.5f, -0.5f,
-        -0.5f, 0.5f,
-        0.5f, 0.5f,
-    };
-    static const GLubyte squareColors[] = {
-        255, 255,   0, 255,
-        0,   255, 255, 255,
-        0,     0,   0,   0,
-        255,   0, 255, 255,
-    };
-    
     static float transY = 0.0f;
+    
+    // turn on “color blending” feature
+    glEnable(GL_BLEND);
+    glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    
     
     glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    glOrthof(-1, 1, -1.5, 1.5, -3, 3);
     
-    if ([context API] == kEAGLRenderingAPIOpenGLES2) {
-        // Use shader program.
-        glUseProgram(program);
-        
-        // Update uniform value.
-        glUniform1f(uniforms[UNIFORM_TRANSLATE], (GLfloat)transY);
-        transY += 0.075f;	
-        
-        // Update attribute values.
-        glVertexAttribPointer(ATTRIB_VERTEX, 2, GL_FLOAT, 0, 0, squareVertices);
-        glEnableVertexAttribArray(ATTRIB_VERTEX);
-        glVertexAttribPointer(ATTRIB_COLOR, 4, GL_UNSIGNED_BYTE, 1, 0, squareColors);
-        glEnableVertexAttribArray(ATTRIB_COLOR);
-        
-        // Validate program before drawing. This is a good check, but only really necessary in a debug build.
-        // DEBUG macro must be defined in your debug configurations if that's not already the case.
-#if defined(DEBUG)
-        if (![self validateProgram:program]) {
-            NSLog(@"Failed to validate program: %d", program);
-            return;
-        }
-#endif
-    } else {
-        glMatrixMode(GL_PROJECTION);
-        glLoadIdentity();
-        glOrthof(-1, 1, -1.5, 1.5, -3, 3); // To make a square in OpenGL co-ordinate appears as a square on the screen, we have to fix the mapping by using glOrthof function
-        glMatrixMode(GL_MODELVIEW);
-        glLoadIdentity();
-        glTranslatef(0.0f, (GLfloat)(sinf(transY)/2.0f), 0.0f);
-        transY += 0.075f;
-        
-        glVertexPointer(2, GL_FLOAT, 0, squareVertices);
-        glEnableClientState(GL_VERTEX_ARRAY);
-        glColorPointer(4, GL_UNSIGNED_BYTE, 0, squareColors);
-        glEnableClientState(GL_COLOR_ARRAY);
-    }
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
     
-    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+    // Red Square
+    glPushMatrix();
+    glTranslatef(0.0f, (GLfloat)(sinf(transY)/2.0f), 0.0f);
+    [self drawUnitSquareRed:255 Green:0 Blue:0 Alpha:128];
+    glPopMatrix();
+    
+    // Green Square
+    glPushMatrix();
+    glTranslatef((GLfloat)(sinf(transY)/2.0f), 0.0f, 0.0f);
+    [self drawUnitSquareRed:0 Green:255 Blue:0 Alpha:128];
+    glPopMatrix();
+    
+    transY += 0.075f;
+    
+    // turn off “color blending” feature
+    glDisable(GL_BLEND);
     
     [(EAGLView *)self.view presentFramebuffer];
 }
+
 
 // This method would draw a unit square (1 unit x 1 unit) with the specified color.
 - (void)drawUnitSquareRed:(GLubyte)red Green:(GLubyte)green Blue:(GLubyte)blue Alpha:(GLubyte)alpha
